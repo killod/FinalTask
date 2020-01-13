@@ -1,0 +1,39 @@
+<!--
+ - Created by imasukov on 1/3/2020.
+ -->
+
+<aura:component description="ActorSearch" controller="ActorSearchController">
+    <aura:registerEvent name="filmsLoaded" type="c:FilmsLoaded"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="searchString" type="String" default=""/>
+    <aura:attribute name="actors" type="List" default=""/>
+    <aura:attribute name="selectedActor" type="String" default=""/>
+    <aura:attribute name="showDropDown" type="Boolean" default="false"/>
+
+    <div>
+        <lightning:input type="search" label="Search" variant="label-hidden"
+                         value="{!v.searchString}" placeholder="Search by Actor name"
+                         onchange="{!c.onSearchStringChange}" onfocus="{!c.onFocusInput}"/>
+    </div>
+    <aura:renderIf isTrue="{!v.showDropDown}">
+        <div class="slds-dropdown slds-dropdown_length-5 slds-dropdown_fluid"
+             role="listbox">
+            <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                <aura:iteration items="{!v.actors}" var="actor">
+                    <li role="presentation" class="slds-listbox__item"
+                        data-value="{!actor}" onclick="{!c.optionClickHandler}">
+                        <div class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small"
+                             role="option">
+                            <span class="slds-media__figure slds-listbox__option-icon"></span>
+                            <span class="slds-media__body">
+                                <span class="slds-truncate" title="All Opportunities">
+                                    <span>{!actor}</span>
+                                </span>
+                            </span>
+                        </div>
+                    </li>
+                </aura:iteration>
+            </ul>
+        </div>
+    </aura:renderIf>
+</aura:component>

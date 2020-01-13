@@ -1,0 +1,16 @@
+<!--
+ - Created by imasukov on 1/3/2020.
+ -->
+
+<aura:component description="FilmDetailTable">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler event="c:FilmsLoaded" action="{!c.onFilmsLoaded}"/>
+    <aura:attribute name="films" type="List"/>
+    <aura:attribute name="columns" type="List"/>
+    <lightning:datatable
+            keyField="id"
+            data="{! v.films }"
+            columns="{! v.columns }"
+            hideCheckboxColumn="true"/>
+
+</aura:component>

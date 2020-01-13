@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ActorSearchController</members>
+        <members>ActorTriggerHandler</members>
+        <members>FilmTriggerHandler</members>
+        <members>OnAfterUndeleteUniquenessChecker</members>
+        <members>RestActorsFilmsService</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>ActorTrigger</members>
+        <members>FilmTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>ActorSearch</members>
+        <members>FilmCollection</members>
+        <members>FilmDetailTable</members>
+        <members>FilmLibrary</members>
+        <members>FilmsLoaded</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
+    </types>
+    <version>43.0</version>
+</Package>

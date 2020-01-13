@@ -1,0 +1,7 @@
+<!--
+ - Created by imasukov on 1/3/2020.
+ -->
+
+<aura:event type="APPLICATION" description="FilmsLoaded">
+    <aura:attribute name="films" type="List"/>
+</aura:event>
