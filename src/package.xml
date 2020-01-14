@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>ActorInFilmTriggerHandler</members>
+        <members>ActorInFilmTriggerTest</members>
         <members>ActorSearchController</members>
         <members>ActorTriggerHandler</members>
+        <members>ActorTriggerTest</members>
         <members>FilmTriggerHandler</members>
-        <members>OnAfterUndeleteUniquenessChecker</members>
+        <members>FilmTriggerTest</members>
         <members>RestActorsFilmsService</members>
+        <members>RestActorsFilmsServiceTest</members>
+        <members>UniquenessChecker</members>
         <name>ApexClass</name>
     </types>
     <types>
+        <members>ActorInFilmTrigger</members>
         <members>ActorTrigger</members>
         <members>FilmTrigger</members>
         <name>ApexTrigger</name>
@@ -22,8 +28,38 @@
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
+        <members>ActorInFilm__c.Actor__c</members>
+        <members>ActorInFilm__c.Film__c</members>
+        <members>Actor__c.CountFilms__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
         <members>CustomLabels</members>
         <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>ActorInFilm__c</members>
+        <members>Actor__c</members>
+        <members>Film__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>ActorInFilm__c</members>
+        <members>Actor__c</members>
+        <members>Film_Library</members>
+        <members>Film__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>ActorInFilm__c-ActorInFilm Layout</members>
+        <members>Actor__c-Actor Layout</members>
+        <members>Film__c-Film Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Actor__c.Unique_Actor_Name</members>
+        <members>Film__c.Unique_Film_Name</members>
+        <name>ValidationRule</name>
     </types>
     <version>43.0</version>
 </Package>

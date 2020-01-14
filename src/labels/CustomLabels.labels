@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
-        <fullName>RestoredMessageLabel</fullName>
+        <fullName>Actor</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>Restored Message</shortDescription>
-        <value>restored</value>
+        <shortDescription>Actor</shortDescription>
+        <value>Actor</value>
     </labels>
     <labels>
         <fullName>Film</fullName>
@@ -22,10 +22,10 @@
         <value>already exists</value>
     </labels>
     <labels>
-        <fullName>Actor</fullName>
+        <fullName>RestoredMessageLabel</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>Actor</shortDescription>
-        <value>Actor</value>
+        <shortDescription>Restored Message</shortDescription>
+        <value>restored</value>
     </labels>
 </CustomLabels>

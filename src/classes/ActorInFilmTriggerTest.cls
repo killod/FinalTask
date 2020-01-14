@@ -52,7 +52,6 @@ private class ActorInFilmTriggerTest {
             actorInFilms.add(new ActorInFilm__c(Film__c = films[i].Id, Actor__c = newActor.Id));
             numberOfNewActorFilms++;
         }
-
         Test.startTest();
         insert actorInFilms;
         for (Integer i = 5; i < 10; i++) {
